@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Imovies | Paulo Henrique</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Imovies</a>
+        <ul class="nav">
+            <li><a href="#"><i class="fa fa-home"></i></a></li>
+            <li><a href="#">Adulto</a></li>
+            <li><a href="#">Infantil</a></li>
+            <li><a href="#">Em alta</a></li>
+            <li><a href="#">Minha lista</a></li>
+        </ul>
+        <div class="search">
+            <input type="text" id="movieSearch" class="autocomplete" placeholder="Procurar">
+            <i class="fa fa-search" style="cursor: pointer" onClick="runSearch()"></i>
+        </div>
+    </header>
+
+    <section class="banner">
+        <div class="content the-little-mermaid active">
+            <img src="./images/the-little-mermaid-title.png" class="movie-title">
+            <h4><span>2023</span><span><i>12+</i></span><span>2h 14min</span><span>Romance</span></h4>
+            <p>Uma jovem sereia faz um acordo com uma bruxa do mar para descobrir o mundo acima da água.</p>
+            <div class="button">
+                <a href="javascript:void(0)" onclick="startMovie()"><i class="fa fa-play"></i> Assistir</a>
+                <a href="#"><i class="fa fa-plus"></i> Minha lista</a>
+            </div>    
+        </div>
+
+        <div class="content bg-65">
+            <img src="./images/the-65-title.png" class="movie-title">
+            <h4><span>2023</span><span><i>12+</i></span><span>1h 30min</span><span>Ficção, Ação</span></h4>
+            <p>Após um acidente, o piloto Mills descobre que está preso na Terra, mas 65 milhões de anos atrás.</p>
+            <div class="button">
+                <a href="javascript:void(0)" onclick="startMovie()"><i class="fa fa-play"></i> Assistir</a>
+                <a href="#"><i class="fa fa-plus"></i> Minha lista</a>
+            </div>
+        </div>
+
+        <div class="content the-covenant">
+            <img src="./images/the-covenant-title.png" class="movie-title">
+            <h4><span>2023</span><span><i>16+</i></span><span>2h 03min</span><span>Ação, Drama</span></h4>
+            <p>Durante a Guerra do Afeganistão, um sargento recruta um intérprete local para uma missão arriscada.</p>
+            <div class="button">
+                <a href="javascript:void(0)" onclick="startMovie()"><i class="fa fa-play"></i> Assistir</a>
+                <a href="#"><i class="fa fa-plus"></i> Minha lista</a>
+            </div>
+        </div>
+
+        <div class="content the-black-demon">
+            <img src="./images/the-black-demon-title.png" class="movie-title">
+            <h4><span>2023</span><span><i>16+</i></span><span>1h 40min</span><span>Terror, Ficção</span></h4>
+            <p>Uma família fica presa em uma plataforma sob o ataque de um gigantesco tubarão megalodonte.</p>
+            <div class="button">
+                <a href="javascript:void(0)" onclick="startMovie()"><i class="fa fa-play"></i> Assistir</a>
+                <a href="#"><i class="fa fa-plus"></i> Minha lista</a>
+            </div>
+        </div>
+
+        <div class="content the-tank">
+            <img src="./images/the-tank-title.png" class="movie-title">
+            <h4><span>2023</span><span><i>16+</i></span><span>1h 40min</span><span>Terror, Suspense</span></h4>
+            <p>Uma família herda uma propriedade costeira e acidentalmente liberta uma criatura ancestral.</p>
+            <div class="button">
+                <a href="javascript:void(0)" onclick="startMovie()"><i class="fa fa-play"></i> Assistir</a>
+                <a href="#"><i class="fa fa-plus"></i> Minha lista</a>
+            </div>
+        </div>
+
+        <div class="content deadpool">
+            <img src="./images/deadpool-letra.png" class="movie-title">
+            <h4><span>2016</span><span><i>16+</i></span><span>1h 48min</span><span>Ação, Comédia</span></h4>
+            <p>Wade Wilson busca vingança contra o homem que o desfigurou e lhe deu poderes de cura.</p>
+            <div class="button">
+                <a href="javascript:void(0)" onclick="startMovie()"><i class="fa fa-play"></i> Assistir</a>
+                <a href="#"><i class="fa fa-plus"></i> Minha lista</a>
+            </div>
+        </div>
+
+        <div class="carousel-box">
+            <div class="carousel">
+                <div class="carousel-item" onClick="changeBg('bg-little-mermaid.jpg', 'the-little-mermaid');">
+                    <img src="./images/movies-20260301T192245Z-1-001/movies/the-little-mermaid.jpeg">
+                    <p>A Pequena Sereia</p>
+                </div>
+                <div class="carousel-item" onClick="changeBg('bg-65.jpeg', 'bg-65');">
+                    <img src="./images/movies-20260301T192245Z-1-001/movies/65.jpg">
+                    <p>65: Ameaça Pré-Histórica</p>
+                </div>
+                <div class="carousel-item" onClick="changeBg('bg-the-covenant.jpeg', 'the-covenant');">
+                    <img src="./images/movies-20260301T192245Z-1-001/movies/the-covenant.jpg">
+                    <p>O Pacto</p>
+                </div>
+                <div class="carousel-item" onClick="changeBg('bg-the-black-demon.jpeg', 'the-black-demon');">
+                    <img src="./images/movies-20260301T192245Z-1-001/movies/the-black-demon.jpg">
+                    <p>Black Demon</p>
+                </div>
+                <div class="carousel-item" onClick="changeBg('bg-the-tank.jpeg', 'the-tank');">
+                    <img src="./images/movies-20260301T192245Z-1-001/movies/the-tank.jpeg">
+                    <p>O Tanque</p>
+                </div>
+                <div class="carousel-item" onClick="changeBg('bg-deadpool.jpeg', 'deadpool');">
+                    <img src="./images/movies-20260301T192245Z-1-001/movies/bannerDeadpool.jpg">
+                    <p>Deadpool</p>
+                </div>
+            </div>
+        </div> 
+
+        <a href="javascript:void(0)" class="play" onclick="toggleVideo()"><i class="fa fa-play-circle-o"></i>Watch Trailer</a>
+        
+        <ul class="sci">
+            <li><a href="#"><i class="fa fa-facebook-official"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        </ul>
+    </section>
+
+    <div class="trailer" id="playerModal"></div>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
